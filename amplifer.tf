@@ -1,3 +1,6 @@
+provide "aws" {
+  region = "us-east-2"
+}
 resource "aws_amplify_app" "example" {
   name       = "example"
   repository = "https://github.com/example/app"
