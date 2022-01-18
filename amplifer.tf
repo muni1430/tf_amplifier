@@ -1,9 +1,9 @@
 provider "aws" {
   region = "us-east-2"
 }
-resource "aws_amplify_app" "example" {
-  name       = "example"
-  repository = "https://github.com/example/app"
+resource "aws_amplify_app" "example1" {
+  name       = "example1"
+  repository = "https://github.com/Gunamoni11/tf_amplifier.git"
 
   # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
