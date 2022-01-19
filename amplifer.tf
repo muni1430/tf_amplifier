@@ -1,8 +1,8 @@
 provider "aws" {
   region = "us-east-2"
 }
-resource "aws_amplify_app" "example1" {
-  name       = "example1"
+resource "aws_amplify_app" "example3" {
+  name       = "example3"
   repository = "https://github.com/Gunamoni11/tf_amplifier.git"
   #access_token = "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"
   
