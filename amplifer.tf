@@ -4,7 +4,14 @@ provider "aws" {
 resource "aws_amplify_app" "example1" {
   name       = "example1"
   repository = "https://github.com/Gunamoni11/tf_amplifier.git"
-  access_token = "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"
+  #access_token = "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"
+  
+  
+data "aws_ssm_parameter" "foo" {
+  name = "/github/access_token"
+}
+
+data.aws_ssm_parameter.foo.value
 
   # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
