@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 data "aws_ssm_parameter" "foo" {
-  name = "/github/access_token"
+  name = "/github/tokengen"
 }
 
 resource "aws_amplify_app" "example3" {
   name       = "example3"
-  repository = "https://github.com/Gunamoni11/tf_amplifier.git"
+  repository = "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
   access_token = data.aws_ssm_parameter.foo.value
 
   # The default build_spec added by the Amplify Console for React.
