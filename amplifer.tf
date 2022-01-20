@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 data "aws_ssm_parameter" "foo" {
-  name = "/github/tokengen"
+  name = "/github/tokengenw"
 }
 
 resource "aws_amplify_app" "example3" {
