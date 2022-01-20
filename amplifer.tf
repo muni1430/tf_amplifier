@@ -7,7 +7,7 @@ data "aws_ssm_parameter" "foo" {
 }
 
 resource "aws_amplify_app" "example3" {
-  name       = "example3"
+  name       = "new one amplify"
   repository = "https://github.com/muni1430/tf_amplifier.git"
   access_token = data.aws_ssm_parameter.foo.value
 
