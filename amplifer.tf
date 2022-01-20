@@ -8,7 +8,7 @@ data "aws_ssm_parameter" "foo" {
 
 resource "aws_amplify_app" "example3" {
   name       = "example3"
-  repository = "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+  repository = "https://github.com/muni1430/tf_amplifier.git"
   access_token = data.aws_ssm_parameter.foo.value
 
   # The default build_spec added by the Amplify Console for React.
